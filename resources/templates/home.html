@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8" name="csrf-token" content="{{ csrf_token }}">
+        <title>{{ config('application.name') }}</title>
+        <link rel="stylesheet" href="/static/css/main.css">
+        <link rel="stylesheet" href="/static/css/mystyle.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    </head>
+    <body class='bg-gray-400 w-screen flex flex-col min-h-screen'>
+        <nav class='bg-gray-800 flex justify-between items-center cursor-pointer p-2'>
+            <div class="ml-6 flex justify-between items-center">
+                <div class="flex items-center bg-blue-500 hover:bg-blue-700 text-white text-sm font-bold rounded px-1 py-3 h-14 w-14 rounded-full focus:outline-none focus:shadow-outline">
+                  <a href = "{{route ('home')}}" >YS&FC</a>
+                </div>
+                <div class="ml-3 text-white">Youth Sports & Fitness Camp</div>
+            </div>
+            <div class='flex'>
+                <div class="mr-8 bg-blue-500 hover:bg-blue-700 text-white rounded py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    <a id='' href=# class="">Sign In</a><i class="fas fa-sign-in-alt ml-3 "></i>
+                </div>
+                <button class="mr-8 bg-blue-500 hover:bg-blue-700 text-white rounded py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    My Account<i class="far fa-user ml-3"></i>
+                </button>
+                <button class="mr-8 bg-blue-500 hover:bg-blue-700 text-white rounded py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                    Logout<i class="fas fa-sign-out-alt ml-3"></i>
+                </button>
+            </div>
+        </nav>
+        {%block content%}
+        <div class='h-1/5 snow1 font-body'>
+            <div class='h-full flex justify-center py-6 bg-christmas-green items-center snow2' style='background-image: url(/static/img/snow.png)'>
+                <h1 class='text-5xl text-christmas-red'>Christmas Break Camp Coming Winter 2021!</h1>
+            </div>
+        </div>
+        
+        <section class='bg-blue-200 h-2/5 flex shadow'>
+            <div class='bg-red-500 h-full w-1/3'>
+                <img class='h-full w-full' src='/static/img/camp5-winter.jpeg'>
+            </div>
+            <div class='bg-green-500 h-full w-1/3'>
+                <img class='h-full w-full' src='/static/img/camp1-winter.jpeg'>
+            </div>
+            <div class='bg-blue-500 h-full w-1/3'>
+                <img class='h-full w-full' src='/static/img/camp6-winter.jpeg'>
+            </div>
+        </section>
+        <main class='flex-grow'>
+            <div class='ml-10 mr-10 mt-20 flex justify-around '>
+                <div class='bg-white h-80 w-1/5 rounded shadow'>
+                    <div class='mt-5'>
+                        <h1 class='flex justify-center font-cursive text-3xl'>Pirates</h1>
+                        <img class='h-2/3 w-full object-contain' src='/static/img/pirate_logo.jpeg'>
+                    </div>
+                    <div>
+                    
+                    <div class='h-1/3 flex-col flex justify-center items-center py-5'>
+                        <div class='mb-2 text-xl'>Ages 5-6</div>
+                        <button class='bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-20 rounded mb-8'>Register</button>                    </div>
+                    </div>
+                </div>
+                <div class='bg-white h-80 w-1/5 rounded shadow'>
+                    <div class='mt-5'>
+                        <h1 class='flex justify-center font-cursive text-3xl'>Bulldogs</h1>
+                        <img class='h-2/3 w-full object-contain' src='/static/img/bulldog_logo.jpeg'>
+                    </div>
+                    <div>
+                        <div class='h-1/3 flex-col flex justify-center items-center'>
+                            <div class='mb-2 text-xl'>Ages 7-8</div>
+                            <button class='bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-20 rounded mb-8'>Register</button>
+                        </div>
+                    </div>
+                </div>
+                <div class='bg-white h-80 w-1/5 rounded shadow'>
+                    <div class='mt-5'>
+                        <h1 class='flex justify-center font-cursive text-3xl'>Bears</h1>
+                        <img class='h-2/3 w-full object-contain' src='/static/img/bear_logo.png'>
+                    </div>
+                    <div>
+                        <div class='h-1/3 flex-col flex justify-center items-center'>
+                            <div class='mb-2 text-xl'>Ages 9-10</div>
+                            <button class='bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-20 rounded mb-8'>Register</button>                        </div>
+                        </div>
+                </div>
+                <div class='bg-white h-80 w-1/5 rounded shadow'>
+                    <div class='mt-5'>
+                        <h1 class='flex justify-center font-cursive text-3xl'>Panthers</h1>
+                        <img class='h-2/3 w-full object-contain' src='/static/img/panther_logo.jpeg'>
+                    </div>
+                        <div class='h-1/3 flex-col flex justify-center items-center'>
+                            <div class='mb-2 text-xl'>Ages 11-12</div>
+                            <button class='bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-20 rounded mb-8'>Register</button>
+                        </div>
+                </div>
+            </div>
+            <div class='flex justify-center'>
+                <div class='mt-20 font-cursive text-4xl'>
+                    <h1 >Welcome To Brevard County's Youth Sports & Fitness Camp</h1>
+                </div>
+                <div>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+        
+        </main>
+        {%endblock%}
+        <footer class="mt-8 p-4 flex justify-around font-bold text-white bg-gray-800">
+            <div  >
+                <i class="far fa-envelope cursor-pointer"></i> <p class="inline ml-1 hover:underline cursor-pointer">youthsportsandfitnesscamp@gmail.com</p>
+            </div>
+            <div class="">
+              <p>Youth Sports & Fitness Camp &#169; 2021</p>
+            </div>
+            <div class="">
+                <i class="fas fa-phone"></i> <p class='inline ml-1'>(321) 536-9280</p>
+            </div>
+            <div>
+             <a href='https://facebook.com' class='text-2xl'><i class="fab fa-facebook"></i></a>
+             <a href='https://instagram.com' class='text-2xl ml-3'><i class="fab fa-instagram"></i></a>
+             <a href='https://twitter.com' class='text-2xl ml-3'><i class="fab fa-twitter"></i></i></a>
+            </div>
+          </footer>
+          <script></script>
+    </body>
+</html>

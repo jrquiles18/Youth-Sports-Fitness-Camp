@@ -1,0 +1,3 @@
+2021-08-05 17:27:26 - ERROR - TemplateNotFound in /Users/juanr.quilesjr/Desktop/YouthCamp-Masonite/app/http/controllers/WelcomeController.py on line 21
+2021-08-12 22:46:47 - ERROR - RouteException in /Users/juanr.quilesjr/Desktop/YouthCamp-Masonite/resources/templates/home.html on line 21
+2021-08-24 21:12:28 - ERROR - UndefinedError in /Users/juanr.quilesjr/Desktop/YouthCamp-Masonite/resources/templates/registration.html on line 1
